@@ -1,0 +1,103 @@
+.nav{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: rgb(37, 37, 37);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    margin-left:-20%;
+
+}
+.nav ul{
+    width: 95%;
+}
+.nav ul li{
+    list-style: none;
+    
+}
+.nav a{
+    display: block;
+    color: aliceblue;
+    padding: 16px;
+    text-decoration: none;
+    margin: 10% 0 -10% 0;
+    font-size: 1.25rem;
+
+}
+#add-btn-user{
+    background-color: transparent; 
+    border:none;
+    font-size:1.25rem;
+    margin: 10% 0 -5% -5.5%;
+    color:aliceblue;
+    padding:16px;
+    padding-left: 0%;
+    width: 105%;
+}
+#logout{
+    margin-top: 250%;
+}
+#add-btn-user:active{
+    background-color: brown;
+    color: #000;
+}
+#add-btn-user:hover:not(.active){
+    background-color: aliceblue;
+    color: #000000;
+}
+.nav a:active{
+    background-color: brown;
+    color: #000;
+}
+.nav a:hover:not(.active){
+    background-color: aliceblue;
+    color: #000000;
+}
+
+.container{
+    margin: 0 0 0 200px;
+    width: 80%;
+    height: 1000px;
+}
+.checkbox,#checkbox{
+    margin: 0 0 0 0;
+    cursor: pointer;
+    background-color: rgb(37, 37, 37);
+    width: 100%;
+    font-size: 1.5rem;
+    color: aliceblue;
+
+}
+#checkbox{
+    display: none;
+    
+}
+#checkbox:checked ~ .nav{
+    
+        margin:-2.5% 0 0 0;
+    }
+#checkbox:checked ~ .checkbox{
+    
+        margin-left: 13.25%;
+        background-color: rgb(37, 37, 37);
+}
+
+
+
+@media (max-width:700px){
+    .nav{
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-left: -50%;
+    }
+    .nav a{
+        float: left;
+        border-bottom: grey;
+
+    }
+    .container{
+        margin-left: 0;
+    }
+}
