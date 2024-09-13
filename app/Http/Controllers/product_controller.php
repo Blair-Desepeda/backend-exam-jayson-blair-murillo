@@ -8,6 +8,10 @@ use App\Models\product_model;
 
 class product_controller extends Controller
 {
+    public function welcome(){
+        $display_data=product_model::get();
+        return view ('welcome',compact ('display_data'));
+    }
     public function index(){
         $display_data=product_model::get();
         return view ('index',compact ('display_data'));
@@ -56,4 +60,22 @@ class product_controller extends Controller
 
         return redirect ('product')->with('status', 'Data deleted successfully');
         }
+
+    public function search(Request $search_data)
+    {
+        $search= $search_data->search;
+
+        $display_data=product_model::where(function($query) use ($search)
+        {
+            $query->where('name','like',"%$search%")
+            ->orWhere('description', 'like',"%$search%")
+            ->orWhere('category', 'like',"%$search%");
+            
+        })
+
+            ->get();
+
+            return view('index',compact('display_data','search'));
+    }
+
 }

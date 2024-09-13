@@ -56,4 +56,6 @@ class user_controller extends Controller
 
         return redirect ('product')->with('status', 'Data deleted successfully');
         }
+
+
 }

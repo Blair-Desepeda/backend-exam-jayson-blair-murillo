@@ -46,7 +46,14 @@ html,body{
 
 }
 #logout{
-    margin-top: 250%;
+    margin-top: 320%;
+    font-size: 1.3rem;
+    width: 100%;
+}
+#logout1{
+    margin-top: 270%;
+    font-size: 1.3rem;
+    width: 100%;
 }
 #add-btn-user:active{
     background-color: brown;

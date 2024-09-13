@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,33 +10,35 @@
     <link rel="stylesheet" href="{{url('assets/css/update.css')}}">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-    <input type="checkbox" name="" id="checkbox">
-    <label for="checkbox" class="checkbox">&#9776;Menu</label>
-    <div class="nav">
-        <ul>
+        <input type="checkbox" name="" id="checkbox">
+        <label for="checkbox" class="checkbox">&#9776;Menu</label>
+        <div class="nav">
+            <ul>
 
-            <li><a href="{{url('dashboard')}}">Dashboard</a></li>
-            <li><a href="{{url('add-user')}}">View users</a></li>
-            <li>
-                <button type="button" 
-                data-bs-toggle="modal" 
-                data-bs-target="#modal-add-user" 
-                id="add-btn-user">
-                    Add user
-                  </button>
-            </li>
-            <li id="contact"><a href="">Contact Me</a></li>
-            <li id="logout">
-                <form action="{{url('logout')}}" method="post">
-                    @csrf
-                    <button type="submit" class="btn btn-dark">Logout</button></li>
+                <li><a href="{{url('dashboard')}}">Dashboard</a></li>
+                <li><a href="{{url('add-user')}}">View users</a></li>
+                <li>
+                    <button type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-add-user"
+                        id="add-btn-user">
+                        Add user
+                    </button>
+                </li>
+                <li id="contact"><a href="">Contact Me</a></li>
+                <li>
+                    <form action="{{url('logout')}}" method="post">
+                        @csrf
+                        <button type="submit" class="btn btn-dark" id="logout1">Logout</button>
+                </li>
                 </form>
-        </ul>
-        
-    </div>
-</header>
-<div class="container" >
+            </ul>
 
-<br>
+        </div>
+    </header>
+    <div class="container">
+
+        <br>

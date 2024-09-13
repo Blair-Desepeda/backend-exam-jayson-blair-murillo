@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,26 @@
     <link rel="stylesheet" href="{{url('assets/css/update.css')}}">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-    <input type="checkbox" name="" id="checkbox">
-    <label for="checkbox" class="checkbox">&#9776;Menu</label>
-    <div class="nav">
-        <ul>
+        <input type="checkbox" name="" id="checkbox">
+        <label for="checkbox" class="checkbox">&#9776;Menu</label>
+        <div class="nav">
+            <ul>
 
-            <li><a href="{{url('dashboard')}}">Dashboard</a></li>
-            <li><a href="{{url('products')}}">Products</a></li><br>
+                <li><a href="{{url('dashboard')}}">Dashboard</a></li>
+                <li><a href="{{url('product')}}">Products</a></li><br>
 
-            <li id="contact"><a href="">Contact Me</a></li>
-            <form action="{{url('logout')}}" method="post">
+                <li id="contact"><a href="">Contact Me</a></li>
                 @csrf
-                <button type="submit" class="btn btn-dark">Logout</button></li>
-            </form>        </ul>
-        
-    </div>
-</header>
-<div class="container" >
+                <form action="{{url('logout')}}" method="post">
+                    <button type=" submit" id="logout" class="btn btn-dark">Logout</button></li>
+                </form>
+            </ul>
 
-<br>
+        </div>
+    </header>
+    <div class=" container">
+
+        <br>
