@@ -35,6 +35,41 @@
 </table>
 </div>
 <!-- Modal for add data -->
+<form action="{{url('user/add')}}" method="post">
+    @csrf
+<div class="modal fade" id="modal-add-user" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">ADD DATA</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <input type="text" class="form-control" name="name" required placeholder="Name">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="text" class="form-control" name="email" required placeholder="Email">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="password" class="form-control" name="password" required placeholder="Password">
+          </div>
+          <br>
+          <div class="form-group">
+            <input type="password" class="form-control" name="password_confirmation" required placeholder="Re-enter Password">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-success">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<!-- Modal for add data -->
 <form action="{{url('dashboard/add')}}" method="post">
     @csrf
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -55,6 +90,7 @@
             <option value="Appliances">Appliances</option>
             <option value="Food">Food</option>
             <option value="Gadgets">Gadgets</option>
+            <option value="Vehicle">Vehicle</option>
             </select>
           </div>
           <br>

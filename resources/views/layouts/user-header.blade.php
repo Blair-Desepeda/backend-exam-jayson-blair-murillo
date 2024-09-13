@@ -17,22 +17,13 @@
         <ul>
 
             <li><a href="{{url('dashboard')}}">Dashboard</a></li>
-            <li><a href="{{url('add-user')}}">View users</a></li>
-            <li>
-                <button type="button" 
-                data-bs-toggle="modal" 
-                data-bs-target="#modal-add-user" 
-                id="add-btn-user">
-                    Add user
-                  </button>
-            </li>
+            <li><a href="{{url('products')}}">Products</a></li><br>
+
             <li id="contact"><a href="">Contact Me</a></li>
-            <li id="logout">
-                <form action="{{url('logout')}}" method="post">
-                    @csrf
-                    <button type="submit" class="btn btn-dark">Logout</button></li>
-                </form>
-        </ul>
+            <form action="{{url('logout')}}" method="post">
+                @csrf
+                <button type="submit" class="btn btn-dark">Logout</button></li>
+            </form>        </ul>
         
     </div>
 </header>

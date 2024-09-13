@@ -1,3 +1,6 @@
+html,body{
+    overflow: hidden;
+}
 .nav{
     margin: 0;
     padding: 0;
@@ -16,24 +19,31 @@
     list-style: none;
     
 }
+
 .nav a{
     display: block;
     color: aliceblue;
     padding: 16px;
     text-decoration: none;
-    margin: 10% 0 -10% 0;
+    margin: 25% 0 -10% 0;
     font-size: 1.25rem;
-
+    text-align: center;
+    border: 1px solid green;
+}
+.nav #contact a{
+    margin: 5% 0 -10% 0;
 }
 #add-btn-user{
     background-color: transparent; 
     border:none;
     font-size:1.25rem;
-    margin: 10% 0 -5% -5.5%;
+    margin: 15% 0 0 0;
     color:aliceblue;
     padding:16px;
-    padding-left: 0%;
-    width: 105%;
+    width: 100%;
+    border: 1px solid green;
+
+
 }
 #logout{
     margin-top: 250%;
@@ -63,10 +73,13 @@
 .checkbox,#checkbox{
     margin: 0 0 0 0;
     cursor: pointer;
-    background-color: rgb(37, 37, 37);
-    width: 100%;
+    width: 8%;
     font-size: 1.5rem;
     color: aliceblue;
+
+}
+header{
+    background-color: rgb(37, 37, 37);
 
 }
 #checkbox{
