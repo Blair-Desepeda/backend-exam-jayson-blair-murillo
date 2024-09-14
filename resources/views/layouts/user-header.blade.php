@@ -19,7 +19,6 @@
             <ul>
 
                 <li><a href="{{url('dashboard')}}">Dashboard</a></li>
-                <li><a href="{{url('product')}}">Products</a></li><br>
 
                 <li id="contact"><a href="">Contact Me</a></li>
                 <form action="{{url('logout')}}" method="post">

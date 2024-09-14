@@ -1,4 +1,118 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+===========================================================
+BACKEND EXAM PROJECT INSTALLATION
+===========================================================
+
+*SYSTEM INSTALLATION  AND CLONING FROM GIT REPOSITORY
+
+1.) Open and copy the github repository named as
+    => backend-exam-jayson-blair-murillo
+===========================================================
+
+* Setup to run the file after cloning the project
+
+1.) open the terminal and type the command
+    => composer update
+
+2.) open again th terminal and install npm using the ff. command.
+    => npm install
+
+3.) Generate the appkey using terminal
+    => php artisan key:generate
+===========================================================
+
+*Open and setup xampp fist, start "mysql" and "apache"
+
+===========================================================
+
+*DATABASE SETUP AND CONFIGURATION
+
+1.) Open and setup the ".env" file
+    =>  DB_CONNECTION=mysql
+        DB_HOST=localhost
+        DB_PORT=3306
+        DB_DATABASE=laravel-crud-exam
+        DB_USERNAME=root
+        DB_PASSWORD=
+
+2.) create a database and name it as
+    =>laravel-crud
+
+3.) Open the terminal and type the command
+    =>  php artisan migrate
+
+4.) Open the terminal again and type the command
+    => php artisan db:seed -class = product_seeder
+
+===========================================================
+
+*RUN THE PROJECT
+1.) Open the terminal and type the ff.
+    =>php artisan serve
+
+2.) login using the default admin
+    =>email:admin@gmail.com
+    =>password:admin123
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -63,4 +177,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT). -->

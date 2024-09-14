@@ -32,7 +32,7 @@
       <footer class="form-group">
         <br>
         <button type="submit" name="update" class="btn btn-success" id="update">Update</button>
-        <a href="{{url('/product')}}" name="description" class="btn btn-danger" id="close">Back</a>
+        <a href="{{url('/dashboard')}}" name="description" class="btn btn-danger" id="close">Back</a>
       </footer>
       <br>
     </div>
