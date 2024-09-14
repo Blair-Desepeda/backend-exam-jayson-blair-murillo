@@ -46,7 +46,7 @@ html,body{
 
 }
 .table-container{
-    max-height: 60%;
+    max-height: 50%;
     overflow: scroll;
     overflow-x: hidden;
     scrollbar-width: thin;
