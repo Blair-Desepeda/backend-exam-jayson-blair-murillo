@@ -26,7 +26,8 @@ BACKEND EXAM PROJECT INSTALLATION
 
 *DATABASE SETUP AND CONFIGURATION
 
-1.) Open and setup the ".env" file
+1.) Create the ".env" file
+    *Copy the content of .env.example and paste to .env that you created
     =>  DB_CONNECTION=mysql
         DB_HOST=localhost
         DB_PORT=3306
@@ -52,7 +53,7 @@ BACKEND EXAM PROJECT INSTALLATION
 2.) login using the default admin
     =>email:admin@gmail.com
     =>password:admin123
-
+===========================================================
 
 
 
