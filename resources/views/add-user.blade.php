@@ -12,6 +12,7 @@
   {{$errors->first('password')}}
 </div>
 @endif
+<div class="table-container">
 <table class="table table-bordered table-striped">
   <thead class="table table-bordered table-dark">
     <tr>
@@ -35,7 +36,7 @@
     <tr>
       <td>{{$display_data->name}}</td>
       <td>{{$display_data->email}}</td>
-      <td id="description">{{$display_data->password}}</td>
+      <td id="description" style="max-width: 200px;width:45%;overflow:scroll;overflow-y:hidden;scrollbar-width:thin;">{{$display_data->password}}</td>
       <td>{{$display_data->updated_at}}</td>
       <td id="edit-column">
         <a href="{{url('/user/'.$display_data->id.'/edit/')}}" class="btn btn-success" id="edit-btn">UPDATE</a>
@@ -47,6 +48,7 @@
   </tbody>
 
 </table>
+</div>
 </div>
 <!-- Modal for add data -->
 <form action="{{url('user/add')}}" method="post">

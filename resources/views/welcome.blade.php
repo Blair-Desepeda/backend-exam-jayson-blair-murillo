@@ -947,31 +947,33 @@
                     @endif
                 </header>
 
-                <table class="table table-bordered table-striped">
-                    <thead class="table table-bordered table-dark">
-                        <tr>
-                            <th>Name</th>
-                            <th>Category</th>
-                            <th>
-                                Description
-                            </th>
+                <div class="table-container">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table table-bordered table-dark">
+                            <tr>
+                                <th>Name</th>
+                                <th>Category</th>
+                                <th>
+                                    Description
+                                </th>
 
-                        </tr>
-                    </thead>
+                            </tr>
+                        </thead>
 
-                    <tbody>
-                        @foreach($display_data as $display_data)
+                        <tbody>
+                            @foreach($display_data as $display_data)
 
-                        <tr>
-                            <td>{{$display_data->name}}</td>
-                            <td>{{$display_data->category}}</td>
-                            <td id="description">{{$display_data->description}}</td>
-                        </tr>
-                        @endforeach
+                            <tr>
+                                <td>{{$display_data->name}}</td>
+                                <td>{{$display_data->category}}</td>
+                                <td id="description">{{$display_data->description}}</td>
+                            </tr>
+                            @endforeach
 
-                    </tbody>
+                        </tbody>
 
-                </table>
+                    </table>
+                </div>
                 <footer class="py-16 text-center text-sm text-black dark:text-white/70">
                     Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                 </footer>

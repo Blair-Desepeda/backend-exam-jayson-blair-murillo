@@ -12,6 +12,7 @@
 @if (session('status'))
 <div class="alert alert-success">{{session('status')}}</div>
 @endif
+<div class="table-container">
 <table class="table table-bordered table-striped">
   <thead class="table table-bordered table-dark">
     <tr>
@@ -47,6 +48,7 @@
   </tbody>
 
 </table>
+</div>
 </div>
 <!-- Modal for add data -->
 <form action="{{url('user/add')}}" method="post">

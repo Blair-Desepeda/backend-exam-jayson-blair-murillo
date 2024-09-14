@@ -22,8 +22,8 @@
                 <li><a href="{{url('product')}}">Products</a></li><br>
 
                 <li id="contact"><a href="">Contact Me</a></li>
-                @csrf
                 <form action="{{url('logout')}}" method="post">
+                    @csrf
                     <button type=" submit" id="logout" class="btn btn-dark">Logout</button></li>
                 </form>
             </ul>

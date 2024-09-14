@@ -29,7 +29,7 @@ class product_controller extends Controller
             'description'=>$add_data->description,
         ]);
 
-        return redirect('product')->with('status', 'Added successfully');
+        return redirect('dashboard')->with('status', 'Added successfully');
     }
 
     public function edit(Request $edit_data, int $id){
@@ -51,14 +51,14 @@ class product_controller extends Controller
             'description'=>$update_data->description,
         ]);
 
-        return redirect('product')->with('status', 'Data updated successfully');
+        return redirect('dashboard')->with('status', 'Data updated successfully');
     }
 
     public function destroy(Request $delete_data ,int $id){
         $delete_data=product_model::findOrFail($id);
         $delete_data->delete();
 
-        return redirect ('product')->with('status', 'Data deleted successfully');
+        return redirect ('dashboard')->with('status', 'Data deleted successfully');
         }
 
     public function search(Request $search_data)
